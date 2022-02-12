@@ -1,0 +1,9 @@
+{% extends 'savage_bcw/base.html' %}
+
+{% block title %}МЕРЧ{% endblock %}
+
+{% block content %}
+    {% for product in products %}
+        <p><a href="{% url 'selected_product' product.pk %}">{{ product.name }}</a></p>
+    {% endfor %}
+{% endblock %}

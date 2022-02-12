@@ -1,0 +1,107 @@
+.contact{
+    display: block;
+}
+
+#back-call-form{
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 388px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.back-call-title{
+    margin-left: -16vh;
+    margin-right: -16vh;
+    border-bottom: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.back-call-title p{
+    color: #030305;
+    font-size: 40px;
+    -webkit-text-stroke-width: .4px;
+    -webkit-text-stroke-color: #ffffff;
+    margin-top: 5px;
+}
+
+#messengers{
+    margin-left: 389px;
+    list-style: none;
+    display: block;
+}
+
+#messengers li{
+    float: left;
+}
+
+#icon{
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.mail{
+    display: block;
+    margin-left: 390px;
+}
+
+#mail-button{
+    width: 508px;
+    height: 40px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+
+#id_firstname{
+    width: 239px;
+    height: 40px;
+    background-color: #030305;
+    color: #747474;
+    border: 2px solid #747474;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+#id_lastname{
+    width: 239px;
+    margin-left: -.5px;
+    height: 40px;
+    background-color: #030305;
+    color: #747474;
+    border: 2px solid #747474;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#id_email{
+    width: 495px;
+    height: 40px;
+    background-color: #030305;
+    color: #747474;
+    border: 2px solid #747474;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#id_theme{
+    width: 495px;
+    height: 40px;
+    background-color: #030305;
+    color: #747474;
+    border: 2px solid #747474;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#id_text {
+    width: 495px;
+    background-color: #030305;
+    color: #747474;
+    border: 2px solid #747474;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}

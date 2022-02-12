@@ -1,0 +1,12 @@
+{% extends 'savage_bcw/base.html' %}
+
+{% block title %}КОМАНДА{% endblock %}
+
+{% block content %}
+    {% for member in members %}
+        <p>{{ member.nick_name }}</p>
+        <p>{{ member.first_name }} {{ member.last_name }}</p>
+        <p>{{ member.city }}</p>
+        <p>{{ member }}</p>
+    {% endfor %}
+{% endblock %}

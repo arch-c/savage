@@ -1,0 +1,10 @@
+{% extends 'savage_bcw/base.html' %}
+
+{% block title %}{{ product.name }}{% endblock %}
+
+{% block content %}
+    <h3>{{ product.name }}</h3>
+    <p>{{ product.describe }}</p>
+    <p>{{ product.composition }}</p>
+    <p>{{ product.price }}</p>
+{% endblock %}

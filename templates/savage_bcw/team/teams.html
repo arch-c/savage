@@ -1,0 +1,10 @@
+{% extends 'savage_bcw/base.html' %}
+
+{% block title %}ИГРЫ{% endblock %}
+
+{% block content %}
+    <div class="teams-title"><p>КОМАНДА</p></div>
+    {% for game in games %}
+        <div><a id="game-link" href="{% url 'selected_game' game.pk %}">{{ game.name }}</a></div>
+    {% endfor %}
+{% endblock %}

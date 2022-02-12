@@ -1,0 +1,32 @@
+{% extends 'savage_bcw/base.html' %}
+{% load static %}
+
+{% block title %}ОБРАТНАЯ СВЯЗЬ{% endblock %}
+
+{% block content %}
+    <div class="back-call-title"><p>КОНТАКТЫ</p></div>
+
+    <div class="contact">
+        <ul id="messengers">
+            <li id="icon"><a href=""><img src="{% static 'img/icons/facebook.png' %}" alt=""
+                                          width="100px" height="50px"></a></li>
+            <li id="icon"><a href=""><img src="{% static 'img/icons/vk.png' %}" alt=""
+                                          width="100px" height="50px"></a></li>
+            <li id="icon"><a href=""><img src="{% static 'img/icons/instagram.png' %}" alt=""
+                                          width="100px" height="50px"></a></li>
+            <li id="icon"><a href=""><img src="{% static 'img/icons/twitter.png' %}" alt=""
+                                          width="100px" height="50px"></a></li>
+            <li id="icon"><a href=""><img src="{% static 'img/icons/telegram.png' %}" alt=""
+                                          width="100px" height="50px"></a></li>
+        </ul>
+        <br><br><br>
+        <p id="back-call-form">ФОРМА СВЯЗИ</p>
+        <div class="mail">
+            <form action="{% url 'back_call' %}" method="POST">
+                {% csrf_token %}
+                {{ form.as_table }}
+                <input id="mail-button" type="submit" value="Отправить">
+            </form>
+        </div>
+    </div>
+{% endblock %}

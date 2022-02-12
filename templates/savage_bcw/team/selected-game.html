@@ -1,0 +1,10 @@
+{% extends 'savage_bcw/base.html' %}
+
+{% block title %}{{ game.name }}{% endblock %}
+{% block content %}
+    {% for member in members %}
+        <h3>{{ member.nick_name }}</h3>
+        <p>{{ member.first_name }} {{ member.last_name }}</p>
+        <p>{{ member.city }}</p>
+    {% endfor %}
+{% endblock %}
