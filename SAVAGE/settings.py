@@ -84,6 +84,8 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'SAVAGE.wsgi.application'
 
+CART_SESSION_ID ='cart'
+
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
