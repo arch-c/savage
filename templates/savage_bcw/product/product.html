@@ -4,6 +4,6 @@
 
 {% block content %}
     {% for product in products %}
-        <p><a href="{% url 'selected_product' product.pk %}">{{ product.name }}</a></p>
+        <p><a href="{% url 'main:selected_product' product.pk %}">{{ product.name }}</a></p>
     {% endfor %}
 {% endblock %}

@@ -3,6 +3,7 @@ from django.urls import re_path
 from .views import (index, TeamView, GameView, SelectedGameView, ProductsView, SelectedProductView, BackCallView,
                     AboutView)
 
+app_name = 'main'
 urlpatterns = [
     re_path(r'^$', index, name='home'),
     re_path(r'^teams/$', GameView.as_view(), name='teams'),

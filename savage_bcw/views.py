@@ -4,6 +4,7 @@ from django.views.generic import View
 from django.core.mail import send_mail
 from django.conf import settings
 
+from cart.forms import CartAddProductForm
 from .models import Member, Product, Game
 from .forms import BackCallForm
 
@@ -27,7 +28,8 @@ class ProductsView(View):
 class SelectedProductView(View):
     def get(self, request, product_id):
         product = get_object_or_404(Product, pk=product_id)
-        context = {'product': product}
+        cart_product_form = CartAddProductForm()
+        context = {'product': product, 'cart_product_form': cart_product_form}
         return render(request, 'savage_bcw/product/selected-product.html', context)
 
 

@@ -5,6 +5,6 @@
 {% block content %}
     <div class="teams-title"><p>КОМАНДА</p></div>
     {% for game in games %}
-        <div><a id="game-link" href="{% url 'selected_game' game.pk %}">{{ game.name }}</a></div>
+        <div><a id="game-link" href="{% url 'main:selected_game' game.pk %}">{{ game.name }}</a></div>
     {% endfor %}
 {% endblock %}

@@ -22,7 +22,7 @@
         <br><br><br>
         <p id="back-call-form">ФОРМА СВЯЗИ</p>
         <div class="mail">
-            <form action="{% url 'back_call' %}" method="POST">
+            <form action="{% url 'main:back_call' %}" method="POST">
                 {% csrf_token %}
                 {{ form.as_table }}
                 <input id="mail-button" type="submit" value="Отправить">

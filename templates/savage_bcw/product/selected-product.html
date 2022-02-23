@@ -7,4 +7,10 @@
     <p>{{ product.describe }}</p>
     <p>{{ product.composition }}</p>
     <p>{{ product.price }}</p>
+
+    <form action="{% url "cart:cart_add" product.pk %}" method="post">
+    {{ cart_product_form }}
+    {% csrf_token %}
+    <input type="submit" value="Add to cart">
+    </form>
 {% endblock %}

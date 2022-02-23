@@ -18,6 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('savage_bcw.urls')),
-    # path('cart', include())
+    path('', include('savage_bcw.urls', namespace='main')),
+    path('cart/', include('cart.urls', namespace='cart'))
 ]
